@@ -5,8 +5,7 @@ import blockchain from "../startBlockchain.mjs"
   } from '../utilities/fileHandler.mjs';  
 import { ErrorResponse } from "../utilities/ErrorResponseModel.mjs";
 
-
-  const folder = "data";
+const folder = "data";
 const file = "blockchain.json";  
 
 
@@ -16,21 +15,26 @@ res.status(200).json(new ResponseModel({ statusCode: 200,  data: blockchain}))
 
 export const addNewBlock = (req, res, next) => {
   const data = req.body;
-    const lastBlock = blockchain.getLastBlock();
-    const timestamp = Date.now(); 
 
-    const currentBlockHash = blockchain.hashBlock(timestamp, lastBlock.currentBlockHash, data);
-    const block = blockchain.createBlock(
-       timestamp,
-       lastBlock.currentBlockHash,
-       currentBlockHash,
-        data
-  ); 
-
- if (!block.data.data) {
+  if (Object.keys(data).length === 0) {
   return next(new ErrorResponse("Block must include data to be added to the blockchain", 404))
- }
-    writeToFile(folder, file, blockchain)  
+ } 
+  const lastBlock = blockchain.getLastBlock();
+  const timestamp = Date.now();
+
+  const currentBlockHash = blockchain.hashBlock(
+    timestamp,
+    lastBlock.currentBlockHash,
+    data
+  );
+  const block = blockchain.createBlock(
+    timestamp,
+    lastBlock.currentBlockHash,
+    currentBlockHash,
+    data
+  );
+
+  writeToFile(folder, file, blockchain);
   res.status(201).json(new ResponseModel({ statusCode: 201, data: block }));
 }
 
