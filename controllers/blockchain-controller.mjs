@@ -20,18 +20,26 @@ export const addNewBlock = (req, res, next) => {
   return next(new ErrorResponse("Block must include data to be added to the blockchain", 404))
  } 
   const lastBlock = blockchain.getLastBlock();
-  const timestamp = Date.now();
+  const {nonce, difficulty, timestamp} = blockchain.proofOfWork(
+    lastBlock.currentBlockHash,
+    data
+  );
 
   const currentBlockHash = blockchain.hashBlock(
     timestamp,
     lastBlock.currentBlockHash,
-    data
+    data,
+    nonce,
+    difficulty
   );
+        console.log(nonce);
+
   const block = blockchain.createBlock(
     timestamp,
     lastBlock.currentBlockHash,
     currentBlockHash,
-    data
+    data,
+    difficulty
   );
 
   writeToFile(folder, file, blockchain);
@@ -40,7 +48,6 @@ export const addNewBlock = (req, res, next) => {
 
 export const blockByIndex = (req, res, next) => {
     try {
-      /* throw new Error("Something went wrong with the execution of code") */
       const blockIndex = req.params.id;
       const block = blockchain.chain[blockIndex - 1];
 
