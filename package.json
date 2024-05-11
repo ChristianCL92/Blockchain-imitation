@@ -4,7 +4,8 @@
   "description": "Node.js-blockchain-imitation",
   "main": "server.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "start": "node --env-file=config/config.env server.mjs",
     "dev": "nodemon --env-file=config/config.env server.mjs"
   },
