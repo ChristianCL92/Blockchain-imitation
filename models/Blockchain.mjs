@@ -50,8 +50,7 @@ export default class Blockchain {
     const lastBlock = this.getLastBlock();
     let difficulty, hash, timestamp;
     let nonce = 0;
-    /*         let hash = this.hashBlock(timestamp,previousBlockHash, data, nonce);
-     */
+   
     do {
       nonce++;
       timestamp = Date.now();
@@ -71,14 +70,15 @@ export default class Blockchain {
   }
 
   difficultyAdjustment(lastBlock, timestamp) {
-    const MINE_RATE = process.env.MINE_RATE
-    let { difficulty } = lastBlock;
+    const MINE_RATE = parseInt(process.env.MINE_RATE);
+      let { difficulty } = lastBlock;
+      
+        if(difficulty < 1) return 1; 
 
-    if(difficulty < 1) return 1;
-
-    return timestamp - lastBlock.timestamp > MINE_RATE
+      return timestamp - lastBlock.timestamp > MINE_RATE
     ? +difficulty + 1
-    : +difficulty - 1;
-    
-  }
+    : +difficulty - 1; 
+
+  } 
 }
+
