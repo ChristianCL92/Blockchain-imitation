@@ -1,0 +1,48 @@
+{
+  "chain": [
+    {
+      "timestamp": 1715516808384,
+      "blockIndex": 1,
+      "previousBlockHash": "0",
+      "currentBlockHash": "0",
+      "data": [],
+      "difficulty": "1"
+    },
+    {
+      "timestamp": 1715516814863,
+      "blockIndex": 2,
+      "previousBlockHash": "0",
+      "currentBlockHash": "00e6710ddeac97d6b90a9a1d8b096497978ac38c299ef87bb40ab16e9c685741",
+      "data": {
+        "carBrand": "Audi",
+        "model": "A8",
+        "CarDetails": {
+          "color": "Moonlight Blue",
+          "fuelType": "Diesel",
+          "engineType": "3.0L V6 Turbo",
+          "horsepower": "286",
+          "year": "2019"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "timestamp": 1715516837052,
+      "blockIndex": 3,
+      "previousBlockHash": "00e6710ddeac97d6b90a9a1d8b096497978ac38c299ef87bb40ab16e9c685741",
+      "currentBlockHash": "00023bcd7c3abd7ba6e706baa9e381ef3d921ac7465fae418d73daf091cb0736",
+      "data": {
+        "carBrand": "Tesla",
+        "model": "Model S",
+        "CarDetails": {
+          "color": "Midnight Silver Metallic",
+          "fuelType": "Electric",
+          "engineType": "Electric",
+          "horsepower": "670",
+          "year": "2022"
+        }
+      },
+      "difficulty": 3
+    }
+  ]
+}

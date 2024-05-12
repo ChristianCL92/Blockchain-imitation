@@ -1,0 +1,74 @@
+Method:GET URL:/api/v1/blockchain/77 -
+    Date:2024-05-06 Time: 21:12:36
+    Success: false - Message: Car with id:77 does not exist
+Method:POST URL:/api/v1/blockchain/mine -
+    Date:2024-05-07 Time: 06:58:22
+    Success: false - Message: Block must include data to be added to the blockchain
+    
+Method:POST URL:/api/v1/blockchain/mine -
+    Date:2024-05-07 Time: 07:28:32
+    Success: false - Message: Block must include data to be added to the blockchain
+Method:POST URL:/api/v1/blockchain/mine -
+    Date:2024-05-07 Time: 19:51:44
+    Success: false - Message: Block must include data to be added to the blockchain
+Method:GET URL:/api/v1/blockchaintrt -
+    Date:2024-05-08 Time: 10:06:44
+    Success: false - Message: Could not find resource /api/v1/blockchaintrt
+Method:POST URL:/api/v1/blockchain/mine -
+    Date:2024-05-08 Time: 15:14:38
+    Success: false - Message: Block must include data to be added to the blockchain
+Method:POST URL:/api/v1/blockchain/min -
+    Date:2024-05-08 Time: 15:18:27
+    Success: false - Message: Could not find resource /api/v1/blockchain/min
+Method:GET URL:/api/v1/blockchain/7 -
+    Date:2024-05-08 Time: 15:24:31
+    Success: false - Message: Car with id:7 does not exist
+Method:GET URL:/api/v1/blockchain/5 -
+    Date:2024-05-09 Time: 19:03:01
+    Success: false - Message: Car with id:5 does not exist
+Method:GET URL:/api/v1/blockchain/3433 -
+    Date:2024-05-09 Time: 19:03:05
+    Success: false - Message: Car with id:3433 does not exist
+Method:GET URL:/api/v1/blockchain/you -
+    Date:2024-05-09 Time: 19:03:14
+    Success: false - Message: Car with id:you does not exist
+Method:GET URL:/api/v1/blockchainassdf -
+    Date:2024-05-09 Time: 19:03:25
+    Success: false - Message: Could not find resource /api/v1/blockchainassdf
+Method:GET URL:/api/v1/blockchain/products/apple -
+    Date:2024-05-09 Time: 19:03:35
+    Success: false - Message: Could not find resource /api/v1/blockchain/products/apple
+
+Method:GET URL:/api/v1/blockchain/3 -
+    Date:2024-05-09 Time: 21:41:50
+    Success: false - Message: Car with id:3 does not exist
+Method:POST URL:/api/v1/blockchain/minedd -Date:2024-05-09 Time: 21:52:20Success: false - Message: Could not find resource /api/v1/blockchain/minedd
+Method:POST URL:/api/v1/blockchain/mineddd -Date:2024-05-09 Time: 21:59:56Success: false - Message: Could not find resource /api/v1/blockchain/mineddd
+Method:GET URL:/api/v1/blockchain -Date:2024-05-09 Time: 22:10:00Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain/1 -Date:2024-05-09 Time: 22:10:09Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain -Date:2024-05-09 Time: 22:13:53Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain/2 -Date:2024-05-09 Time: 22:14:02Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain/2 -Date:2024-05-09 Time: 22:14:33Success: undefined - Message: Invalid status code: null
+Method:GET URL:/api/v1/blockchain/1 -Date:2024-05-09 Time: 22:18:10Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain -Date:2024-05-09 Time: 22:18:56Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchai -Date:2024-05-09 Time: 22:22:56Success: false - Message: Could not find resource /api/v1/blockchai
+Method:GET URL:/api/v1/blockchai -Date:2024-05-09 Time: 22:23:01Success: false - Message: Could not find resource /api/v1/blockchai
+Method:GET URL:/api/v1/blockchain/44 -Date:2024-05-09 Time: 22:23:14Success: false - Message: Car with id:44 does not exist
+Method:GET URL:/api/v1/blockchain/3444 -Date:2024-05-10 Time: 08:54:35Success: false - Message: Car with id:3444 does not exist
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 13:54:20Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:POST URL:/api/v1/blockchain/mine -Date:2024-05-10 Time: 13:58:59Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:POST URL:/api/v1/blockchain/mine -Date:2024-05-10 Time: 13:59:35Success: false - Message: Block must include data to be added to the blockchain
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:10:01Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:10:19Success: undefined - Message: Invalid status code: null
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:11:59Success: undefined - Message: Invalid status code: null
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:13:31Success: undefined - Message: Cannot read properties of undefined (reading 'statusCode')
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:13:48Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:14:01Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:14:35Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:14:53Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain -Date:2024-05-10 Time: 14:15:03Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain/34 -Date:2024-05-10 Time: 14:15:54Success: undefined - Message: Cannot read properties of undefined (reading 'success')
+Method:GET URL:/api/v1/blockchain/34 -Date:2024-05-10 Time: 14:16:19Success: false - Message: Car with id:34 does not exist
+Method:GET URL:/api/v1/blockchain/34 -Date:2024-05-10 Time: 14:16:30Success: false - Message: Car with id:34 does not exist
+Method:GET URL:/api/v1/blockchain/2 -Date:2024-05-10 Time: 14:28:57Success: undefined - Message: Cannot set headers after they are sent to the client
+Method:POST URL:/api/v1/blockchain/mine -Date:2024-05-12 Time: 14:24:15Success: undefined - Message: currentTimestamp is not defined
