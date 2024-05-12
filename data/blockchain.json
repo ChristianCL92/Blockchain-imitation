@@ -16,7 +16,7 @@
       "data": {
         "carBrand": "Audi",
         "model": "A8",
-        "CarDetails": {
+        "carDetails": {
           "color": "Moonlight Blue",
           "fuelType": "Diesel",
           "engineType": "3.0L V6 Turbo",
@@ -34,7 +34,7 @@
       "data": {
         "carBrand": "Tesla",
         "model": "Model S",
-        "CarDetails": {
+        "carDetails": {
           "color": "Midnight Silver Metallic",
           "fuelType": "Electric",
           "engineType": "Electric",
