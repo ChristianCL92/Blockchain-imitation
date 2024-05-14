@@ -13,6 +13,14 @@ describe("Block", () => {
             expect(block).toHaveProperty("data")
             expect(block).toHaveProperty("difficulty")
           });
+
+          describe('genesis() method', () => { 
+            const genesisBlock = Block.genesis();
+
+            it("Should return an instance of Block class", () => {
+              expect(genesisBlock).toBeInstanceOf(Block)
+            })
+           })
     })
   
 })
